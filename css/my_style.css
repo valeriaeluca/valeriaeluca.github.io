@@ -1,0 +1,1228 @@
+@font-face {
+    font-family: 'yellowtailregular';
+    src: url('../fonts/yellowtail-regular-webfont.eot');
+    src: url('../fonts/yellowtail-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/yellowtail-regular-webfont.woff2') format('woff2'),
+         url('../fonts/yellowtail-regular-webfont.woff') format('woff'),
+         url('../fonts/yellowtail-regular-webfont.ttf') format('truetype'),
+         url('../fonts/yellowtail-regular-webfont.svg#yellowtailregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'liberatorregular';
+    src: url('../fonts/liberator-webfont.eot');
+    src: url('../fonts/liberator-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/liberator-webfont.woff2') format('woff2'),
+         url('../fonts/liberator-webfont.woff') format('woff'),
+         url('../fonts/liberator-webfont.ttf') format('truetype'),
+         url('../fonts/liberator-webfont.svg#liberatorregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, html, #page-wrapper{
+  width: 100%; height: 100%;
+  font-family: "futura-pt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #63676c;
+}
+body{overflow-x:hidden;}
+a{color: #9c63aa; font-weight: bold;}
+a:hover{color: #9c63aa;}
+
+
+
+p {
+  font-size:1em;
+  line-height: 1.5em;
+  font-weight: bold;
+}
+
+h1{
+  font-family: 'liberatorregular';
+  font-weight: normal;
+  font-size: 3em;
+  margin: 0;
+}
+h3{
+  font-family: 'yellowtailregular';
+  font-weight: normal;
+  font-size: 2.813em;
+  color: #cbd5b1;
+  margin: 0;
+}
+h4{
+  font-size: 2em;
+  font-family: 'liberatorregular';
+  font-weight: normal;
+  margin: 0;
+}
+h5{
+  font-size: 1.500em;
+  font-family: 'yellowtailregular';
+  font-weight: normal;
+  margin: 0;
+}
+
+h5.big {
+  font-size: 2.5em;
+  margin-bottom: 10%;
+}
+
+a.button{
+  border: 3px solid #63676c;
+  padding: 9px 35px;
+  color: #63676c;
+  font-weight: bold;
+  font-size: 1.875em;
+  display: inline-block;
+  margin: 8% 0;
+  text-decoration: none;
+}
+a.button:hover{text-decoration: none;}
+
+.r-align{text-align: right;}
+.l-align{text-align: left;}
+.c-align{text-align: center;}
+
+
+/* set max width to fluid containers */
+.container-fluid{max-width: 1200px;}
+.container-fluid.large{max-width: 1500px;}
+.vcenter {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+}
+
+/* Handle SVG Responsive */
+.svg-wrapper object{width: 100%; height: auto;}
+
+/* Ribbon h2 svgs */
+h2 object{height: 100%; width: auto;}
+h2.ribbon{text-align: center; margin: 0 0 0 0;}
+h2.ribbon{ height: 160px;}
+
+#testimoni h2.ribbon {margin-bottom: 1%; margin-top: 4%;};
+
+section:not(#intro):not(#mappa):not(#sposi):not(#matrimonio):not(#testimoni){
+  padding: 7% 0 10% 0;
+}
+
+/* HTML5 Loader */
+#html5Loader{
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  z-index: 9999;
+  background: #cbd5b1;
+  font-size:3em;
+  text-align: center;
+}
+#alabama, #alabama2{
+  display: table;
+  width: 100%; height: 100%;
+  margin: 0 auto;
+}
+#alabama svg{width:25%; height: 100%; margin: 0 auto; display: table-row;  vertical-align: middle;}
+#alabama2 svg{ display: none;width:25%; height: 100%; margin: 0 auto; display: table-row;  vertical-align: middle;}
+#perc{
+  font-size:1.5em;
+  position: fixed;
+  top:50%; left: 50%;
+  margin-top:-.75em;
+  margin-left:-.75em;
+  font-family: 'yellowtailregular';
+}
+
+/* Main Navigation */
+header#nav{
+  position: fixed;
+  left: 0; top: 0;
+  width: 100%;
+  z-index: 9999;
+
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+header#nav.withbg{background: rgba(255, 255, 255, 0.75);}
+
+#navigation ul{
+  margin: 0;
+  padding: 35px 0;
+  list-style-type: none;
+}
+#navigation ul li{
+  padding: 0;
+  text-align: center;
+}
+#navigation ul li a{
+  border: 3px solid transparent;
+  color: #393d41;
+  padding: 9px 15px;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#navigation ul li a:hover,
+#navigation ul li a.active{
+  border: 3px solid #63676c;
+  text-decoration: none;
+  -webkit-transition: border-color 0.3s linear;
+  -moz-transition: border-color 0.3s linear;
+  -o-transition: border-color 0.3s linear;
+  -ms-transition: border-color 0.3s linear;
+  transition: border-color 0.3s linear;
+}
+.nav-col{float: left;}
+.nav-col-1{width: 22.2649572%;}
+.nav-col-2{width: 18.6752136%;}
+.nav-col-3{width: 18.7179489%;}
+.nav-col-4{width: 14.1880342%;}
+.nav-col-5{width: 15.7264957%;}
+.nav-col-6{width: 10.4273504%;}
+
+#nav-button{
+  position: fixed; top: 0;
+  width: 100%; height: 2em;
+  display: none;
+  font-family: 'futura-pt'; font-size:2em; line-height:2em; text-align: center;
+}
+#nav-button span#nav-icon:before{
+  display: block;
+  content: "+";
+  font-family: 'liberatorregular';
+  font-size: 1.5em;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+#nav-button.close  span#nav-icon:before{
+  color: #9c63aa;
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+header.close{height: 100%;}
+
+
+/* Parralax bg images */
+.behind_image {
+  height: 45%;
+  min-height: 400px;
+  position: relative;
+  overflow: hidden;
+}
+.par-image-wrapper{
+  width: 100%;
+  height: auto;
+  position: absolute;
+  min-height: 300px;
+}
+.over-image{
+  position: relative;
+}
+#photo1{
+  width: 100%; right: 0;
+}
+#photo2{width: 100%; right: 0;}
+#photo3{width: 115%; right: 0;}
+
+
+
+
+/* Intro Area */
+#intro{
+  width: 100%; height: 110%;
+  position: relative;
+  background-image: url('../images/engagement1.jpg');
+  /* background-image: url('http://placehold.it/3480x2560/&text=');   */
+  background-attachment: fixed;
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 0;
+}
+
+#banner{
+  background: rgba(255, 255, 255, 0.9);
+  position: absolute; top: 0; left: 3%;
+  width: 35%;
+  max-width: 450px;
+  text-align: center;
+}
+
+#banner p{font-size: 1.250em;}
+#banner .svg-wrapper{
+  width: 50%; margin: 0% auto;
+}
+
+
+
+/* Bride & Groom */
+#sposi{
+  position: relative;
+  padding: 0;
+  background: transparent;
+}
+
+#curve-wrap{
+  background: #fbfaf8 url('../images/lightpaperfibers.jpg') repeat;
+  margin-top: -5%;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-top-left-radius: 250%150px;
+  border-top-right-radius: 250%150px;
+  padding: 2% 0 0% 0;
+}
+
+#sposi .container-fluid{padding: 11% 3%;}
+.brgm-col{padding: 0 5%;}
+.brgm-col p,
+.story-col p 
+{font-weight: 500; font-size: 1.2em;}
+
+#brandgr{
+  position: absolute;
+  top: -4%;
+  left: 50%;
+  margin-left:-195px;
+}
+#our-story h3{
+  font-family: 'futura-pt';
+  font-size: 2.688em;
+  font-weight: bold;
+  color: #63676c;
+  margin: 5% 0 5% 0;
+  text-transform: uppercase;
+}
+.story-col{
+  text-align: justify;
+}
+.story-col p{text-indent: 2em;}
+.story-col p:first-child{margin-top: 0;}
+#readmore{text-transform: uppercase; display: none;}
+
+
+
+/* Wedding Party */
+#testimoni{
+  background: url('../images/greenpaper.jpg');
+  text-align: center;
+  padding: 1% 0 2% 0;
+}
+#testimoni h4{
+  font-family: 'futura-pt';
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+#testimoni div.row {
+  padding-bottom: 5%
+};
+
+.party-group{
+  text-transform: uppercase;
+  padding: 0;
+  list-style-type: none;
+  font-size:1.2500em;
+  font-weight: bold;
+  margin: 5% 2%;
+}
+.party-group li{margin: 1% 0;}
+#bearers{font-size: .75em; margin-top: 8%;}
+
+
+
+/* When & Where */
+#matrimonio{
+  padding-top: 5%;
+  width: 100%; height: auto;
+  position: relative;
+  background: url('../images/greypaper.jpg');
+  overflow:hidden;
+  z-index: 1;
+}
+
+#roundhouse{
+  z-index: -1;
+  width: 120%; height: 120%;
+  position: absolute; top: -24%; left: -10%;
+}
+#roundhouse object{height: 100%;}
+
+#ww-info{
+  text-align:center;
+  width: 70%;
+  margin: 2% auto 20% auto;
+  min-height: 500px;
+}
+
+#ww-info h3,
+#ww-info p
+{font-family: 'futura-pt';
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+
+h3#ww_loc {
+  font-size: 2.9em;
+  line-height: 1.250em;
+}
+h3#ww_loc .arc-text{font-size:0.643em;}
+
+h5#ww_city{
+  font-size: 1.750em;
+  color: #eaf1d8;
+  display: table;
+  white-space: nowrap;
+  position: relative;
+  width: 70%;
+  margin: 2% auto 10% auto;
+}
+/*lines
+h5#ww_city:before,
+h5#ww_city:after{
+  content: "";
+  height: 2px; width: 20%;
+  background-color: #fff;
+  display: block;
+  position: absolute;
+  top:50%;
+}
+h5#ww_city:before{right: 1.5%;}
+h5#ww_city:after{left: 1.5%;}
+*/
+
+p#ww_time{
+  color: #393e41;
+  font-size: 1.250em;
+}
+p#ww_time .arc-text{
+  color: #eaf1d8;
+  font-size: 2.000em;
+}
+p#ww_date{
+  font-size:2.000em;
+}
+
+.clock_icon{width: 45px; height:44px; margin: 0 auto; background: url('../images/ClockIcon-@2x.png'); background-size: 100%;}
+
+#location a{
+  text-decoration: none;
+  color: #fff;
+}
+#location p{
+  color: #fff;
+  font-family: 'futura-pt';
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.370em;
+  margin: 0;
+  display: inline-block;
+  line-height: 60px;
+  width: 100%;
+
+}
+.map_icon{
+  padding-left: 45px;
+  height:44px;
+  background: url('../images/MapIcon-@2x.png') 0 0 no-repeat;
+  background-size: 45px 44px;
+  display: inline-block;
+  position: relative;
+  top: 10px;
+  margin-right: 2.5%;
+}
+#location{
+  position: absolute;
+  bottom: 0;
+  height: 70px;
+  width: 100%;
+  background: rgba(57, 61, 65, 0.5);
+}
+
+
+/* Lodging */
+#mappa{height:750px; position: relative; text-align: center; }
+#mappa-details{
+  position: absolute;
+  width: 470px; height: 80%;
+  left: 10%;
+  bottom: 0;
+  background: #e6ebd3;
+  background: url('../images/greenpaper.jpg');
+  z-index:999;
+}
+#mappa h2.ribbon{
+  position: absolute;
+  top:-50px; left: -65px;
+}
+.hotel_details{padding: 10%;}
+.hotel_details img {margin-bottom: 10%;}
+.hotel_details h3,
+.hotel_details p.address,
+.hotel_details p.phone
+{
+  font-size: 1.500em;
+  font-family: 'futura-pt';
+  font-weight: bold;
+  color: #63676c;
+  text-transform: uppercase;
+  margin: 0;
+}
+.hotel_details p.phone{margin-top:5%;}
+.hotel_features {margin-top: 12%;}
+.hotel_features p{font-size: .95em;}
+#map-canvas{width: 100%; height: 100%; background: #ffffff;}
+
+
+/* Registries */
+#lista{
+  padding: 5% 0;
+  background: url('../images/groovepaper.jpg');
+}
+#lista .svg-wrapper a{
+  display: 
+  block;
+  z-index: 100;
+}
+#lista .svg-wrapper object{pointer-events: none;}
+#lista .svg-wrapper{
+  width: 50%; margin: 5% auto;
+}
+#lista img {
+  width: 70%;
+  margin: 12% auto;
+}
+
+
+
+
+/* RSVP */
+#rsvp{padding: 5% 0; background: url('../images/greenpaper.jpg'); z-index: 999;}
+#rsvp .container-fluid{max-width: 500px;}
+#rsvp fieldset.row > div{padding: 0 10px;}
+.radio-group{text-align: center;}
+#rsvp_form{position: relative;}
+
+
+/* Forms */
+#message .error{
+  font-size:1.25em;
+  text-align: center;
+  padding: .5em;
+  border: 2px solid #9c63aa;
+  width: 90%;
+  margin: 0 auto;
+}
+.error li{  list-style-type: none;}
+.line_br{
+  width: 20%;
+  height: 3px;
+  background: white;
+  margin: 1em auto;
+}
+#success{
+  text-align: center;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  padding: 10% 0 15% 0;
+}
+
+#success .arc-text{
+  font-size: 3.5em;
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+#success .line2{
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+#success .line3{
+  font-family: 'yellowtailregular';
+  font-size: 3em;
+}
+.mes_no, .mes_yes{display: none;}
+
+#loading{
+  position: absolute;
+  width:100%; height: 100%;
+  background: url('../images/greenpaper.jpg');
+  z-index: 9999;
+  opacity: .7;
+}
+
+input[type="text"], input[type="email"], textarea{
+  -webkit-appearance:none;
+  color: #999;
+  font-size: 0.850em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  border: 4px solid #cbd5b1;
+  border-radius: 3px;
+  width: 100%;
+  padding: 5px 7px;
+  margin: 2.5% 0;
+  resize: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="submit"]:focus,
+textarea:focus
+{
+  outline: 0;
+  -webkit-appearance:none;
+}
+
+input#submit{
+  -webkit-appearance:none;
+  border-radius: 0;
+  border: 0;
+  background: #63676c;
+  color: #ffffff;
+  font-family: 'yellowtailregular';
+  font-size: 2em;
+  width: 200px; height: 70px; margin: 5% auto;
+  display: block;
+  text-indent: -10px;
+}
+
+input[type=radio]+label{
+  font-family: 'yellowtailregular';
+  font-size: 3em;
+  cursor: pointer;
+}
+
+fieldset{border: 0;}
+legend{
+  text-transform: uppercase;
+  font-size: 1.120em;
+  font-weight: bold;
+  text-align: center;
+  font-family: "futura-pt",sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #63676c;
+}
+
+input[type="radio"] {
+  display: none;
+}
+input[type="radio"] + label:before {
+  content: "";
+  background: url('../images/radio-off.png');
+  width: 25px; height: 25px;
+  background-size: 25px 25px;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 8px;
+}
+
+input[type="radio"].error + label {
+  color: #9c63aa;
+}
+
+input[type="radio"]:checked + label:before {
+  background: url('../images/radio-on.png');
+  background-size: 25px 25px;
+}
+input.error:before {
+  content: "*";
+  color: #9c63aa;
+  display: block;
+}
+input.error {
+  border-style: solid;
+  border-color: #9c63aa;
+}
+textarea{min-height: 125px;}
+
+
+/*Footer*/
+footer {display: table; width: 100%; z-index:-1;}
+footer h3{
+
+  font-size: 4em;
+  color: #63676c;
+}
+
+footer p{
+ color: #63676c;
+ text-transform: uppercase;
+ letter-spacing: .01em;
+}
+span.white{color: #ffffff;}
+footer .over-image{
+  display: table-cell;
+  vertical-align: middle;
+  width: 46%; 
+  padding-right:5%;
+  padding-bottom:10%;
+}
+
+
+.award img{pointer-events: none;}
+.award a{display: block;}
+.award{
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+
+#css.award{top: 30%;}
+#opl.award{top: 15%;}
+
+
+
+/*Fix the clock*/
+
+.clock {
+  position: relative !important;
+  padding-top: 0px;
+  margin-left: -194px;
+  height:100px;
+  width: 800px;
+  zoom: 1;
+  transform: scale(.7);
+  -webkit-transform: scale(.7);
+  -ms-transform: scale(.7); /* IE 9 /
+  -webkit-transform: scale(.54); / Safari and Chrome /
+  -o-transform: scale(.54); / Opera /
+  -moz-transform: scale(.54); / Firefox */
+}
+
+.flip-clock-wrapper {
+  font: normal 20px "Helvetica Neue", Helvetica, sans-serif;
+  position: relative;
+  color: #63676C; 
+}
+
+.flip-clock-wrapper ul li a div div.inn {
+  background-color: #3B3D41;
+}
+
+.flip-clock-wrapper .flip-clock-divider.hours .flip-clock-label {
+  right: -87px;
+}
+
+.flip-clock-wrapper .flip-clock-divider.days .flip-clock-label {
+  right: -131px;
+}
+
+#banner h1 {
+  font-family: 'yellowtailregular';
+}
+
+#banner {
+  padding-top: 50px;
+}
+
+.hero-cicle {
+  margin: auto;
+}
+.hero-face {
+  width: 100%;
+  height: 100%;
+}
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+user agent stylesheetdiv {
+  display: block;
+}
+Inherited from 
+body {
+  font-family: "Helvetica Neue",Arial,sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  background: #fff;
+}
+body, button, input, select, textarea {
+  font-family: sans-serif;
+}
+Inherited from 
+html {
+  font-size: 100%;
+  overflow-y: scroll;
+  text-size-adjust: 100%;
+}
+Pseudo ::after element
+.hero-face:after {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 12px;
+  height: 12px;
+  margin: -6px 0 0 -6px;
+  background: #fff;
+  border-radius: 6px;
+  content: "";
+  display: block;
+}
+
+.thumbnail-label {
+  margin: 5% 0;
+  font-size: 1.8em;
+}
+
+.thumbnail {
+  max-width: 240px;
+  min-height: 390px;
+}
+
+.thumbnail img {
+  -webkit-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 2px 15px 1px rgba(0, 0, 0, 0.5);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.thumbnail img:hover {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.saturate {
+  -webkit-filter: saturate(3);
+  filter: saturate(3);
+}
+
+.grayscale {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+.till-left:hover {
+  -webkit-transform: rotate(-10deg) scale(1.1);
+     -moz-transform: rotate(-10deg) scale(1.1);
+       -o-transform: rotate(-10deg) scale(1.1);
+      -ms-transform: rotate(-10deg) scale(1.1);
+          transform: rotate(-10deg) scale(1.1);
+}
+
+.till-right:hover {
+  -webkit-transform: rotate(10deg) scale(1.1);
+     -moz-transform: rotate(10deg) scale(1.1);
+       -o-transform: rotate(10deg) scale(1.1);
+      -ms-transform: rotate(10deg) scale(1.1);
+          transform: rotate(10deg) scale(1.1);
+}
+
+.contrast {
+  -webkit-filter: contrast(160%);
+  filter: contrast(160%);
+}
+.brightness {
+  -webkit-filter: brightness(0.25);
+  filter: brightness(0.25);
+}
+.blur {
+  -webkit-filter: blur(3px);
+  filter: blur(3px);
+}
+.invert {
+  -webkit-filter: invert(100%);
+  filter: invert(100%);
+}
+.sepia {
+  -webkit-filter: sepia(100%);
+  filter: sepia(100%);
+}
+.huerotate {
+  -webkit-filter: hue-rotate(180deg);
+  filter: hue-rotate(180deg);
+}
+.opacity {
+  -webkit-filter: opacity(50%);
+  filter: opacity(50%);
+}
+
+
+
+@media only screen and (max-height : 700px) {
+  #banner{padding-top:100px;}
+}
+
+/* > LG */
+@media only screen and (min-width : 1200px) {
+  .behind_image {height: 55%; min-height: 800px;}
+  .party-group{font-size:1.500em;}
+  #matrimonio h2.ribbon{top:10%;}
+  #roundhouse{top:-20%;}
+  h5#ww_city:before {right: 10%;}
+  h5#ww_city:after {left: 10%;}
+}
+
+/* Md */
+@media only screen and (max-width : 992px) {
+  body, html{font-size: 0.950em;}
+  a.button{font-size: 1.500em; margin: 5% 0;}
+
+  h2.ribbon { height: 80px; }
+
+  .behind_image {height: 40%; min-height: 350px;}
+
+  #lista img {
+    width: 200px;
+  }
+  /* Nav  */
+  #navigation ul{
+    margin: 0;
+    padding: 22px 0;
+    list-style-type: none;
+  }
+
+  #nav-button{display: none;}
+  #navigation{display: block;}
+  #navigation ul{display: block;}
+  #navigation ul li a{
+    padding: 8px 14px;
+    font-size:.9em;
+  }
+  #navigation ul li a:hover,
+  #navigation ul li a.active
+  {padding: 6px 12px; border-width: 2px}
+
+  /* Intro */
+  #intro{background-position: center center;}
+  #banner{width: 45%;}
+
+  /* Wedding Party */
+  #testimoni{font-size: .8em;}
+
+  /* BrideGroom */
+  #sposi{font-size: .85em;}
+  #brandgr{margin-left: -98px;}
+  .story-col p {font-size:1.3em; margin: 2%;}
+
+  /* When Where */
+  #matrimonio h2.ribbon{
+    top: 9%; 
+    /*margin-left: -167.5px;*/
+  }
+
+  /* Lodging */
+  #mappa-details{width: 375px;}
+  #mappa-details h2.ribbon{top: -40px;left: -54px;}
+
+}
+
+/* Sm */
+@media only screen and (max-width : 767px) {
+  body, html{font-size: .9000em;}
+  /* Global */
+  /*.xs-hide{display: none;}*/
+  a.button{-size: 1.755em; margin: 2% 0; text-align: center;}
+
+
+  /*Nav Responsive */
+  header#nav.withbg {background: none;}
+  #nav-button.close{background: none !important;}
+  #nav-button.withbg{background: rgba(255,255,255, 0.75);}
+  #nav-button{display: block;}
+  #navigation{
+    background: rgba(255,255,255,0.75);
+    width: 100%; height: 100%;
+    display: none;
+  }
+  #navigation ul {font-size: 2em; width: 100%; height: 100%;margin: 0 auto; display: table-cell; vertical-align: middle;}
+  #navigation ul li { width: 100% !important;  padding: 5% 0;}
+  header.close{height: 100%;}
+  .blur #page-wrapper{
+    -webkit-filter: blur(10px);
+    -moz-filter: blur(10px);
+    -o-filter: blur(10px);
+    -ms-filter: blur(10px);
+    filter: blur(10px);
+  }
+
+  #navigation ul li a{
+    padding: .8em 0;
+    -size:1.5em;
+    color: #63676c;
+    display: block;
+  }
+  #navigation ul li a.scroll{border: 0; border-width: 0px; padding: 0;}
+  #navigation ul li a:hover{border: 0; padding: 0;}
+
+
+
+  /* Intro */
+  #intro{
+    background-attachment: scroll;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    z-index: 0;
+    width: 100%; height: 108%;
+    position: relative;
+    background-image: url('../images/engagement1_mobile.jpg');
+  }
+
+  #banner{
+    top: initial;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    max-width: 100%;
+    padding: 3%;
+    padding-bottom: 17%;
+  }
+  /* visibility instead of display svg for resize */
+  #banner .svg-wrapper{ display: none;}
+  #banner h1{display: block;}
+
+  #brandgr{top: -4%;}
+  .brgm-col{margin: 5% 0;font-size: 1.2em;}
+  .brgm-col:first-child{margin-top: 0;}
+  .brgm-col h4{font-size: 1.5em;}
+  .story-col p{font-size:1.3em; margin: 2%;}
+  .l-align, .r-align{text-align: center}
+  #readmore{display: block; width: 181px; margin: 0 auto;}
+
+  /* When Where */
+  #roundhouse{width: 130%; height: 130%; top: -28%; left: -15%;}
+  #matrimonio h2.ribbon{top: 6%;}
+  #matrimonio{font-size: .9em;}
+  #location{height: 75px;}
+  #location p{line-height: 75px;}
+  #ww-info{width:100%; font-size: .9em;}
+  p#ww_date{font-size: 1.750em;}
+  .clock_icon{width: 25px;height: 24px;}
+  .map_icon{
+    padding-left:25px;
+    height:24px;
+    background-size: 25px 24px;
+    top: 4px;
+  }
+  h5#ww_city:before { right: 9%; }
+  h5#ww_city:after  { left: 9%; }
+
+
+  /* Lodging */
+  #mappa{height: auto;}
+  #map-canvas{height:240px;}
+  #mappa-details{width: 40%;}
+  #mappa-details{
+    width: 100%;
+    position: relative; left:0; top: 0;
+    height: auto;
+    padding: 20% 10% 10% 10%;
+  }
+  .hotel_details{padding: 0;}
+  .hotel_features {margin-top: 7%;}
+  #mappa-details h2.ribbon{top: 5%; left: 50%; margin-left: -237px;}
+
+
+
+  /* Wedding Party */
+  #testimoni .row:not(#bearers) > div:first-child{margin-bottom: 10%;}
+  #bearers > div{margin-bottom: 5%;}
+  #bearers h5{font-size: 2.000em;}
+
+  /* Bride and Groom */
+  #sposi{
+    border-radius: 0;
+    width: 100%; margin: 0;
+  }
+  .brgm-col p{margin: 0 10%;}
+
+
+  /*Rsvp */
+  input[type=radio]+label{font-size:2em;}
+  input[type="radio"] + label:before {
+    width: 20px; height: 20px;
+    background-size: 20px 20px;
+  }
+  input[type="radio"]:checked + label:before {
+    background-size: 20px 20px;
+  }
+
+    /* Parralax bg images */
+  .behind_image {
+    z-index: -1;
+    height: 45%;
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+  }
+  .par-image-wrapper{
+    width: 100%;
+    height: auto;
+    position: absolute;
+    min-height: 300px;
+  }
+  .over-image{
+    position: relative;
+  }
+
+  .behind_image {height: 45%; min-height: 400px;}
+  #photo1{
+    width: 100%; right: 0;
+  }
+  #photo2{width: 100%; right: 0;}
+  #photo3{width: 100%; right: 0;}
+    footer .over-image{
+    width: 100%;
+    padding: 0 10%;
+    background-color: rgba(0,0,0, 0.75);
+  }
+}
+
+
+/* XS */
+@media only screen and (max-width : 480px) {
+  #css.award {width: 15%; top: 23%; position: absolute;}
+  #opl.award {width: 17%; top: 13%; position: absolute;}
+  .award img{width: 100%;}
+
+
+  /* Global */
+  a.button{
+    font-size: 1.5em;
+    padding: 0px 35px;
+    border-width: 2px;
+    margin: 2% 0;
+  }
+  .behind_image{min-height: 350px;}
+
+  /*Nav Responsive */
+  #navigation ul {font-size: 1.6em;}
+  #navigation ul li{padding: 5% 0;}
+
+  /* Intro */
+  #banner h1{font-size: 1.9em; margin: 2% 0;}
+  #banner h3{font-size: 1.750em;}
+  #banner p{font-size: 0.8750em; margin: 2% 0;}
+
+
+  #brandgr { 
+    /*margin-left: -165px; */
+    top: -3%;
+  }
+  #sposi .row{width: 100%; margin: 0;}
+  .story-col p{font-size:1.3em; margin: 5%;}
+
+  /* Wedding Party */
+  #testimoni .party-group .col-xs-6{width: 100%;}
+
+  /*When & where */
+  h5#ww_city:before { right: 1.5%; }
+  h5#ww_city:after  { left: 1.5%; }
+
+  #matrimonio h2.ribbon {top: 7.5%;}
+  p#ww_time {color: #ffffff;}
+  p#ww_date {position: relative; top: 20px;}
+  #roundhouse { width: 100%; height: 100%; top: -8%; left: 0; }
+  #ww-info{padding-top: 22%;}
+  #location{position: relative; padding: 5%; height: auto;}
+  #location p{
+    line-height: normal;
+    margin: 0 auto;
+    display: block;
+    font-size:1.2em;
+  }
+
+  /*Lodging*/
+  #mappa-details{ padding: 25% 10% 10% 10%; }
+  #mappa-details h2.ribbon{top: 5%; left: 50%; margin-left: -169px;}
+
+  /* Forms */
+  .col-xs-6.text{width: 100%;}
+  input[type="text"], input[type="email"], textarea{border-width: 3px;}
+
+  .par-image-wrapper{ width: 150%;  }
+
+  footer .over-image{
+    width: 100%;
+    padding: 0 8%;
+    background-color: rgba(0,0,0, 0.75);
+  }
+
+
+}
+
+/* XXS */
+@media only screen and (max-width : 320px) {
+  .behind_image{min-height: 300px; height: 40%;}
+  #readmore{width: 65%;}
+  h2.ribbon{ height: 65px; }
+  #brandgr{margin-left: -79px; top: -2%;}
+  #matrimonio h2.ribbon{
+    /*margin-left: -136px; */
+    top: 8%;
+  }
+  #mappa-details h2.ribbon{margin-left: -137px;}
+  h3#ww_loc { font-size: 2.5em; }
+  h5#ww_city:before,
+  h5#ww_city:after{width: 15%;}
+  .map_icon{display: none;}
+  footer .over-image{padding: 0 5%;}
+  #location p{font-size: 1em;}
+
+}
+
+/*Retina Image*/
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  #curve-wrap{ background: #fbfaf8 url('../images/lightpaperfibers_@2X.jpg') 500px 300px repeat; background-size: 50%;}
+  #testimoni, #mappa-details, #rsvp
+  { background: url('../images/greenpaper_@2X.jpg') 500px 300px repeat; background-size: 50%;}
+  #matrimonio{background: url('../images/greypaper_@2X.jpg') 500px 300px repeat; background-size: 50%;}
+  #lista{background: url('../images/groovepaper_@2X.jpg') 300px 300px repeat; background-size: 50%;}
+
+}
+
+
+/*IE*/
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none){
+  #sposi{
+    background: #fbfaf8 url('../images/lightpaperfibers.jpg') repeat;
+  }
+  #brandgr{
+    position: relative;
+    left: 0; top: -50px;
+    margin-left: 0;
+    margin-top: 0;
+    padding-top: 0;
+  }
+
+  #curve-wrap{
+    margin-top: 0;
+    padding-top:0%;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  #matrimonio h2.ribbon{
+    position: relative;
+    top: 140px;
+    left: 0;
+    margin-left: 0;
+  }
+  #mappa h2.ribbon{
+    position: relative;
+  }
+  .hotel_details{
+    margin-top: -125px;
+  }
+}
+
