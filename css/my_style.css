@@ -835,10 +835,10 @@ Pseudo ::after element
   -webkit-filter: brightness(0.25);
   filter: brightness(0.25);
 }
-.blur {
+/*.blur {
   -webkit-filter: blur(3px);
   filter: blur(3px);
-}
+}*/
 .invert {
   -webkit-filter: invert(100%);
   filter: invert(100%);
