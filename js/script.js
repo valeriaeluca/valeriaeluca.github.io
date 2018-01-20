@@ -220,10 +220,10 @@ $(document).ready(function() {
     }
     timedUpdate();
     var wedding = moment('201509271100', 'YYYYMMDDhhmm');
-    var seconds = moment.duration(wedding.diff(moment())).asSeconds();
+    var seconds = moment.duration(moment().diff(wedding)).asSeconds();
     var clock = $('#countdown').FlipClock(seconds, {
         clockFace: 'DailyCounter',
-        countdown: true,
+        countdown: false,
         showSeconds: false,
         language: 'Italian'
     });
